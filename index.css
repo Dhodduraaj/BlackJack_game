@@ -45,3 +45,10 @@ div{
     justify-content: center;
     gap: 20px;
 }
+#player-name{
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,6 +1,6 @@
 
 let player={
-    name:"Dhoddu",
+    name:"user",
     chips:100
 }
 let cards
@@ -12,7 +12,21 @@ let messageEl=document.getElementById("message-el")
 let sumEl=document.getElementById("sum-el")
 let cardsEl=document.getElementById("cards-el")
 let playerEl=document.getElementById("player-el")
-playerEl.textContent=player.name + ": $" + player.chips
+let playerNameInput=document.getElementById("player-name")
+
+function submitName(){
+    let name=playerNameInput.value.trim()
+    if(name){
+        player.name=name
+        playerEl.textContent=player.name + ": $" + player.chips
+    } else{
+        alert("Please enter a valid name.")
+    }
+    playerNameInput.value=""
+    
+}
+
+//playerEl.textContent=player.name + ": $" + player.chips
 
 function chips(won){
     if(won){

@@ -63,30 +63,6 @@ BlackJack_game/
 - **CSS3**: Styling, layout, and background design
 - **JavaScript (ES6)**: Game logic, DOM manipulation, and event handling
 
-## Code Highlights
-
-### Game State Management
-```javascript
-let player = {
-    name: "user",
-    chips: 100
-}
-```
-
-### Card Generation
-```javascript
-function getRandomCard() {
-    let randomNumber = Math.floor(Math.random() * 13) + 1
-    return randomNumber > 10 ? 10 : randomNumber === 1 ? 11 : randomNumber
-}
-```
-
-### Game Rendering
-- Displays current cards dealt
-- Shows the sum of all cards
-- Updates game message based on game state
-- Updates player chip count
-
 ## Getting Started
 
 1. Clone this repository:
@@ -104,17 +80,6 @@ This game works on all modern browsers that support:
 - HTML5
 - CSS3
 - ES6 JavaScript
-
-## Future Enhancements
-
-Potential features for future versions:
-- Dealer AI logic
-- Multiple rounds tracking
-- Sound effects
-- Improved animations
-- Statistics and game history
-- Difficulty levels
-- Mobile-responsive design improvements
 
 ## Learning Outcomes
 
